@@ -1,0 +1,91 @@
+:root {
+    /* --MainColor: #277e1b; */
+  
+    /* Colors */
+  --HoverColor: #277e1b;
+  --ShadyColor: #53a843;
+  --LightShadyColor: #69bd57;
+  --LightGreenColor: #7fd26b;
+  --White: #cccecc;
+  --Black: #000000;
+  
+  
+  }
+
+  img {
+    width: 25%;
+    border-radius: 5%;
+    
+  }
+
+.containerDivHome {
+    text-align: center;
+    border-bottom: solid 3px var(--Black);
+    
+
+}
+
+.firtsDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+}
+
+.firtsDiv p {
+    width: 50%;
+}
+
+.secondDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondDiv p {
+    width: 80%;
+}
+
+
+
+.containerSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 999px) {
+    .firtsDiv {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 0;
+    }
+
+    .containerDivHome {
+        width: 100vw;
+        
+        
+    }
+
+    .firtsDiv img {
+        min-width: 13rem;
+        max-width: 18rem;
+        box-shadow: 0px 8px 19px rgba(23, 33, 33, 33);
+        margin-top: 3rem;
+    }
+
+    .firtsDiv p {
+        
+        width: 85vw;
+    }
+    
+}
+
+
+
+
+
+

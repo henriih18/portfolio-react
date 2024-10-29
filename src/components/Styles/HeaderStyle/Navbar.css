@@ -1,0 +1,106 @@
+:root {
+  /* --MainColor: #277e1b; */
+
+  /* Colors */
+--HoverColor: #277e1b;
+--ShadyColor: #53a843;
+--LightShadyColor: #69bd57;
+--LightGreenColor: #7fd26b;
+--White: #cccecc;
+--Black: #000000;
+
+/* Fonts */
+
+--FontMain: 16px;
+--FontTitle: 20px;
+}
+
+* {
+  scrollbar-width:none;
+}
+
+
+
+header {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--LightGreenColor);
+  height: 6rem;
+  box-shadow: 0px 10px 19px rgba(38, 105, 21, 0.452);
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.navbar {
+  background-color: var(--LightGreenColor);
+  padding: 10px 20px;
+  
+}
+
+.navbar-item{
+  transition: all .2s;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.navbar-item:hover {
+  transform: scale(1.09);
+    background-color: rgb(97, 192, 78);
+    box-shadow: 0px 6px 10px rgb(31, 99, 22);
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-item a {
+  color: var(--Black);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .navbar-item a:hover {
+  text-decoration: underline;
+} */
+
+@media screen and (min-width: 300px) and (max-width: 999px) {
+  header {
+    width: 100vw;
+    display: flex;
+    
+    margin: 0;
+    text-align: center;
+    height: auto;
+   
+    border-radius: 0;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  .navbar {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+}
