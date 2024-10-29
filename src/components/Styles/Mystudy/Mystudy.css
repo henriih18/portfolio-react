@@ -43,7 +43,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 260px;
-  height: 370px;
+  height: auto;
   background: rgba(107, 236, 74, 0.4);
 
   box-shadow: 12px 17px 51px rgba(38, 105, 21, 0.452);
@@ -104,9 +104,6 @@
     
   }
 
-  .card {
-    padding-top: 1rem;
-  }
 
   .Card h3 {
     font-size: 22px;
